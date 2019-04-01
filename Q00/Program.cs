@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Q00
 {
@@ -6,7 +7,12 @@ namespace Q00
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Func00("stressed"));
+        }
+
+        private static string Func00(string str)
+        {
+            return string.Concat(str.Reverse());
         }
     }
 }
